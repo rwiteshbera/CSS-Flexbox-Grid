@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CSS Flexbox | Grid</title>
+</head>
+<body>
+    <header> <h1> CSS Flexbox</h1>
+      
+    </header>
+    <main class="main">
+        <section class="left">
+            <div>
+                <img src="./assets/img-1.png" alt="" srcset="">
+            </div>
+            <div id="display-container" class="container">
+                <h2>display</h2>
+
+                <pre>
+                    <code>
+    .flex-container {
+        display: flex;
+    }
+                    </code>
+                </pre>
+            </div>
+            <div id="flex-wrap-container" class="container">
+                <h2>flex-wrap</h2>
+                <img src="./assets/flex-wrap.png" alt="" srcset="">
+                <pre>
+                    <code>
+    .flex-container {
+        flex-wrap: wrap / no-wrap / wrap-reverse;
+    }                        
+                    </code>
+                </pre>
+            </div>
+            <div id="justify-content-container" class="container">
+                <h2>justify-content</h2>
+                <img src="./assets/justify-content.png" alt="" srcset="">
+                <pre>
+                    <code>
+    .flex-container {
+        justify-content: flex-start / center / flex-end / space-around / space-between / space-evenly;
+    }
+                    </code>
+            </div>
+
+            <div id="align-content-container" class="container">
+                <h2>align-content</h2>
+                <img src="./assets/align-content.png" alt="">
+                <p><b>NOTE: </b>This property only takes effect when the flex-wrap attribute is set to <i>'wrap'</i> or <i>'wrap-reverse'.</i></p>
+                <pre>
+                    <code>
+    .flex-container {
+        flex-wrap: wrap;
+        align-content: flex-start / center / flex-end / stretch / space-between / space-around;
+    }                        
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="right">
+            <div class="description">
+                <blockquote cite="https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout"><p>CSS Flexible Box Layout, commonly known as Flexbox, is a CSS3 web layout model. It is in the W3C's candidate recommendation (CR) stage. The flex layout allows responsive elements within a container to be automatically arranged depending upon screen size (or device).
+                    <br>
+                    
+                    - Source: Wikipedia
+                </p></blockquote>
+            </div>
+            <div id="flex-direction-container" class="container">
+                <h2>flex-direction</h2>
+                <img src="./assets/row-direction.png" alt="" srcset="">
+                <pre>
+                    <code>
+    .flex-container {
+        flex-direction: row / row-reverse / column / column-reverse;
+    }
+                    </code>
+                </pre>
+            </div>
+            <div id="flex-grow-shrink-container" class="container">
+                <h2>flex-grow & flex-shrink</h2>
+                <img src="./assets/flex-grow-shrink.png" alt="">
+                <p>flex-grow</p>
+                <pre>
+                    <code>
+    #flex-item-3 {
+        flex-grow: 4; /* default value = 0 */
+    }
+                    </code>
+                </pre>
+                <p>flex-shrink</p>
+                <pre>
+                    <code>
+    #flex-item-3 {
+        flex-shrink: 4; /* default value = 1 */
+    }
+                    </code>
+                </pre>
+            </div>
+            <div id="align-items-container" class="container">
+                <h2>align-items</h2>
+                <img src="./assets/align-items.png" alt="" srcset="">
+                <pre>
+                    <code>
+    .flex-container {
+        align-items: flex-start / flex-end / center / stretch / baseline;
+    }
+                    </code>
+            </div>
+
+
+        <div id="align-self-container" class="container">
+            <h2>align-self</h2>
+            <img src="./assets/align-self.png" alt="">
+            <pre>
+                <code>
+    #flex-item-3 {
+        align-self: center;
+    }
+                </code>
+            </pre>
+        </div>
+        </section>
+    </main>    
+</body>
+<script src="./js/script.js"></script>
+</html>

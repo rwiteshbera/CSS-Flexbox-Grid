@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-1 : rgb(207, 250, 207);
+    --color-2 : rgb(255, 240, 208);
+    --color-3 : rgb(205, 231, 255);
+}
+ * {
+     margin: 0 auto;
+     padding: 0;
+     box-sizing: border-box;
+ }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 1vw;
+    border-radius: 1em;
+}
+
+main {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.1vw;
+}
+
+.container h2 {
+    padding-bottom: 0.2em;
+}
+
+.left, .right {
+    /* border: 1px solid black; */
+    margin-right: 0.2rem;
+    width: 45vw;
+    padding : 0.5rem;
+}
+
+.container {
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #c5c5c5;
+    margin-bottom: 2rem;
+}
+
+.description {
+    text-indent: 3rem;
+    font-size: 1.2vw;
+    padding: 1rem 1rem 1rem;
+    background-color: var(--color-1);
+    margin-bottom: 1rem;
+}
+
+img {
+    object-fit: fill;
+    width: 30vw;
+}
+pre {
+    background-color:black;
+    color: white;
+    overflow: scroll;
+}
+
+code {
+    font-family: monospace, serif;
+    font-size: 1vw;
+}
+
+#display-container {
+    padding: 1rem 1rem 1rem;
+    margin-top: 1em;
+}
+
+#flex-direction-container {
+    padding: 1rem 1rem 1rem;
+}
+
+#justify-content-container {
+    padding: 1rem 1rem 1rem;
+}
+
+
