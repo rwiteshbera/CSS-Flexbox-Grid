@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/grid.css" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <title>CSS Flexbox | Grid</title>
   </head>
   <body>
@@ -15,25 +15,67 @@
     </header>
     <main class="main">
       <section class="left">
-        <div class="container" id="flex-default">
+        <div class="container" id="grid-default">
+          <img src="../assets/grid/grid-default.png" alt="" />
         </div>
         <div id="" class="container">
           <h2>display</h2>
-
-          <pre>
-                    <code>
-
-                    </code>
-                </pre>
+          <p><b>grid - </b>block level grid</p>
+          <p><b>inline-grid - </b>inline-level grid</p>
+          <pre><code>
+  .container {
+    display: grid / inline grid;
+  }
+                    </code></pre>
+        </div>
+        <div id="" class="container">
+          <h2>grid-column-start</h2>
+          <h2>grid-column-end</h2>
+          <h2>grid-row-start</h2>
+          <h2>grid-row-end</h2>
+          <p>Determine grid items location based on speicific grid line numbers.</p>
+          <img src="../assets/grid/grid-col-start-end.png" alt="" srcset="">
+          <pre><code>
+  .item1 {
+    grid-column-start: 1; /* first line in column */
+    grid-column-end: 3; /* third line in column */
+  }
+                    </code></pre>
+                    <img src="../assets/grid/grid-row-start-end.png" alt="">
+                    <pre><code>
+  .item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+                    </code></pre>
+                    <h4>Shorthand</h4>
+                    <pre><code>
+  grid-column: grid-column-start grid-column-end;
+  grid-row: grid-row-start grid-row-end;
+                    </code></pre>
+        </div>
+        <div class="container">
+          <h2>align-self</h2>
+          <img src="../assets/grid/grid-align-self.png" alt="">
+          <pre><code>
+  .item1 {
+    align-self: start / center / estretch;
+  }
+          </code></pre>
         </div>
       </section>
       <section class="right">
         <div class="description">
-          <blockquote
-            cite="https://en.wikipedia.org/wiki/CSS_grid_layout"
-          >
+          <blockquote cite="https://en.wikipedia.org/wiki/CSS_grid_layout">
             <p>
-                In Cascading Style Sheets, CSS grid layout or CSS grid creates complex responsive web design grid layouts more easily and consistently across browsers. Historically, there have been other methods for controlling web page layout methods, such as tables, floats, and more recently, CSS Flexible Box Layout (Flexbox). CSS grid is currently not an official standard (it is a W3C Candidate Recommendation) although it has been adopted by the recent versions of all current major browsers
+              In Cascading Style Sheets, CSS grid layout or CSS grid creates
+              complex responsive web design grid layouts more easily and
+              consistently across browsers. Historically, there have been other
+              methods for controlling web page layout methods, such as tables,
+              floats, and more recently, CSS Flexible Box Layout (Flexbox). CSS
+              grid is currently not an official standard (it is a W3C Candidate
+              Recommendation) although it has been adopted by the recent
+              versions of all current major browsers
               <br />
 
               - Source: Wikipedia
@@ -41,17 +83,46 @@
           </blockquote>
         </div>
         <div id="" class="container">
-          <h2>flex-direction</h2>
-          <img src="./assets/row-direction.png" alt="" srcset="" />
-          <pre>
-                    <code>
-             </code>
-                </pre>
+          <h2>grid-template-columns</h2>
+          <h2>grid-template-rows</h2>
+          <p>
+            It defines the line names and track size of the grid rows/
+            columns.
+          </p>
+          <img src="../assets/grid/grid-template-col.png" alt="" srcset="" />
+          <pre><code>
+  .container {
+    grid-template-columns: 60px 150px 70px;
+  }
+             </code></pre>
+                <img src="../assets/grid/grid-template-row.png" alt="">
+          <pre><code>
+  .container {
+    grid-template-rows: 100px 30px 60px;
+  }
+             </code></pre>
+<br>
+<p>repeat(3, 1fr) means 3 rows/cols will take 1 fraction unit of available space.</p>
+<br>
+          <pre><code>
+  .container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-cols: repeat(3, 1fr);
+  }
+             </code></pre>
+        </div>
+        <div class="container">
+          <h2>justify-self</h2>
+          <img src="../assets/grid/grid-justify-self.png" alt="">
+          <pre><code>
+            .item1 {
+              justify-self: start / center / end / stretch;
+            }
+          </code></pre>
         </div>
       </section>
     </main>
 
-<a href="../sample.html">Sample</a>
-
+    <a href="../sample.html">Sample</a>
   </body>
 </html>
