@@ -43,6 +43,33 @@ main {
   font-size: 1.1vw;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  justify-items: right;
+}
+
+.page-title {
+  width: 100%;
+  text-align: right;
+  font-size: 2vw;
+}
+.another-page {
+  width: 100%;
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 1.3vw;
+}
+
+.page-title a, .another-page a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.another-page a:hover {
+  text-decoration: underline;
+}
 .container h2 {
   padding-bottom: 0.2em;
 }
@@ -61,7 +88,6 @@ main {
   margin-bottom: 2rem;
   border: 2px solid black;
 }
-
 .container h2,
 h3 {
   text-align: center;
